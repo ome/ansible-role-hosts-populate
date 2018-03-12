@@ -11,6 +11,7 @@ Optional variables:
 - `hosts_populate_iface`: Lookup the host IP using this network interface, default `eth0`
 - `hosts_populate_openstack_groups`: List of openstack groups, hosts from these groups will be included in `/etc/hosts`.
   In practice this will probably work with non-openstack groups too.
+- `hosts_populate_regex_alias`: Include a host alias, defined by the first `(group)` in this regex.
 
 Warning: This role requires full control of `/etc/hosts`.
 

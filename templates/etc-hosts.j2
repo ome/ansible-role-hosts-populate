@@ -6,6 +6,10 @@
 # Group {{ group }}
 {%   for host in (groups[group] | default([]) | sort) %}
 {{ hostvars[host]['ansible_' + (hosts_populate_iface | default('eth0'))].ipv4.address }} {{ hostvars[host].ansible_hostname }}
+{%-    if hosts_populate_regex_alias | default('') | length > 0 %}
+ {{ hostvars[host].ansible_hostname | regex_replace(hosts_populate_regex_alias, '\\1') }}
+{%-    endif %}
+
 {%   endfor %}
 
 {% endfor %}
