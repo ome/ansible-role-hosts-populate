@@ -8,6 +8,7 @@ galaxy_info:
   - name: EL
     versions:
     - 7
+  role_name: hosts_populate
   galaxy_tags: []
 
 dependencies: []

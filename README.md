@@ -1,6 +1,10 @@
 Hosts Populate
 ==============
 
+[![Build Status](https://travis-ci.org/ome/ansible-role-hosts-populate.svg)](https://travis-ci.org/ome/ansible-role-hosts-populate)
+[![Ansible Role](https://img.shields.io/ansible/role/41888.svg)](https://galaxy.ansible.com/ome/hosts_populate/)
+
+
 Populates `/etc/hosts` with static addresses for a list of hostgroups.
 
 
