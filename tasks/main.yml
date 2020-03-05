@@ -4,6 +4,7 @@
 - name: hosts | update /etc/hosts
   become: true
   template:
-    dest: /etc/hosts
+    # hosts_populate_etc_hosts is a hidden variable used for testing in Docker
+    dest: "{{ hosts_populate_etc_hosts | default('/etc/hosts') }}"
     backup: true
     src: etc-hosts.j2
