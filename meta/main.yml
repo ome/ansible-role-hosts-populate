@@ -1,13 +1,15 @@
+---
 galaxy_info:
   author: ome-devel@lists.openmicroscopy.org.uk
-  description: Populates `/etc/hosts` with static addresses for a list of hostgroups
+  description: Populates /etc/hosts with static addresses for a list of
+    hostgroups
   company: Open Microscopy Environment
   license: BSD
   min_ansible_version: 2.1
   platforms:
-  - name: EL
-    versions:
-    - 7
+    - name: EL
+      versions:
+        - 7
   role_name: hosts_populate
   galaxy_tags: []
 

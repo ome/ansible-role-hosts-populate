@@ -1,16 +1,15 @@
 ---
 sudo: required
 language: python
-python: 2.7
 
 services:
   - docker
 
 install:
-  - pip install ome-ansible-molecule-dependencies
+  - pip install "ome-ansible-molecule<0.5"
 
 script:
-  - mv molecule-docker.yml molecule.yml && molecule test
+  - molecule test
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

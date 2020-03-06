@@ -1,5 +1,0 @@
----
-- hosts: all
-  roles:
-    - role: ansible-role-hosts-populate
-      hosts_populate_openstack_groups: [all]
