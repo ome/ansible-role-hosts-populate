@@ -1,7 +1,7 @@
 Hosts Populate
 ==============
 
-[![Build Status](https://travis-ci.org/ome/ansible-role-hosts-populate.svg)](https://travis-ci.org/ome/ansible-role-hosts-populate)
+[![Actions Status](https://github.com/ome/ansible-role-hosts-populate/workflows/Molecule/badge.svg)](https://github.com/ome/ansible-role-hosts-populate/actions)
 [![Ansible Role](https://img.shields.io/ansible/role/41888.svg)](https://galaxy.ansible.com/ome/hosts_populate/)
 
 
