@@ -10,5 +10,5 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 def test_index(host):
     f = host.file("/etc/hosts-molecule")
     assert re.search(
-        r'^# Group all\n^\d+\.\d+\.\d+\.\d+ hosts-populate$',
+        r'^# Group all\n^\d+\.\d+\.\d+\.\d+ hosts-populate$', # noqa
         f.content_string, re.MULTILINE)

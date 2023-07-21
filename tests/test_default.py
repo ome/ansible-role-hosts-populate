@@ -8,5 +8,5 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 def test_index(File):
     f = File("/etc/hosts")
     assert re.search(
-        '^# Group all$\n^\d+\.\d+\.\d+\.\d+ host-populate$',
+        '^# Group all$\n^\d+\.\d+\.\d+\.\d+ host-populate$', # noqa
         f.content, re.MULTILINE)
