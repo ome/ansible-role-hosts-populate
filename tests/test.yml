@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-  - role: ansible-role-hosts-populate
+  - role: ome.hosts_populate
